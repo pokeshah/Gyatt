@@ -62,12 +62,12 @@ x = anon x: x + 1
 yap about x(1) rn
 
 gyatt one():
-  x = "1"
-  gyatt two():
-	nogatekeep x
-	x = "2"
-  two()
-  yeet x
+	x = "1"
+	gyatt two():
+		nogatekeep x
+		x = "2"
+	two()
+	yeet x
 yap about one() rn
 
 fanumtax Exception("haha get fanumtaxed!!!")
