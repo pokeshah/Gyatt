@@ -114,6 +114,6 @@ More advanced users can also add `gyatt` as an alias for `python3 gyatt.py` in t
 ## Future changes (not happening)
 1. Add more Gyatt code to replace Python
 2. Automatically add alias
-3. Add ~~tokenization~~
+3. ~~Add tokenization~~
 
 # Yes, I am okay.
