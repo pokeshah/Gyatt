@@ -3,10 +3,10 @@ Gyatt (Gee-yacht) is the Python-based language of the future.
 <br><sub><sup>This is satire; please don't use this, **especially** if you don't know what these terms mean</sup></sub>
 
 ## Why?
-Python, a language traditionally thought of as "easy" and "intuitive," uses too many obscure words like `print()` or `math`. I wanted to fix this and keep Python in line with modern conversational English.
+Python, a language traditionally thought of as "easy" and "intuitive," uses too many obscure words like `print()` and `math`. I wanted to fix this and keep Python in line with modern conversational English.
 
 ## What does Gyatt code look like?
-Gyatt is designed with a focus on readability, speed, and function. Its code mirrors this.
+Gyatt is designed with a focus on readability, speed, and function.
 The following is sample code written in Gyatt (comments, although allowed, are generally not needed due to Gyatt's readable nature, and are excluded from this example):
 
 ```gyatt
@@ -72,8 +72,7 @@ yap about one() rn
 
 fanumtax Exception("haha get fanumtaxed!!!")
 ```
-
-Although this code is readable by the majority of the English-speaking world, there are some cave-dwellers who may fail to understand it. The following is a translation guide for Gyatt.
+Although this code is easily readable by the majority of the English-speaking world, there may be some cave-dwellers who may fail to understand it. The following is a translation guide for Gyatt.
 ```python
 lrizz — False
 norizz — None
