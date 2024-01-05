@@ -2,11 +2,11 @@ yoinked nerd steal pi masquerade pie
 yap about pie rn
 
 sus 1+2 be 3:
-    yap about "3" rn
+	yap about "3" rn
 imposter 1+2 be 2 idk 1+2 be 4:
 	yap about "2 idk 4" rn
 crewmate:
-    yap about "error" rn
+	yap about "error" rn
 
 yapunitl wrizz:
 	yap about "among us" rn
@@ -52,8 +52,8 @@ yap about x(1) rn
 gyatt one():
   x = "1"
   gyatt two():
-    nogatekeep x
-    x = "2"
+	nogatekeep x
+	x = "2"
   two()
   yeet x
 yap about one() rn
