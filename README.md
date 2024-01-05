@@ -107,12 +107,12 @@ nerd — math
 ```
 
 ## OMG!! this looks so exciting! How do I start?
-The Gyatt interpreter(`gyatt.py`) is written in Python and therefore, you will need [Python](https://www.python.org/) to run Gyatt. Next, clone this repository. Then, write some gyatt code or use the example `code.gyt` file provided and run `python3 gyatt.py code.gyt`. This will compile the `compiled.py` version of your `.gyt` code, which can be found in your working directory. WARNING: THIS WILL DELETE PRE-EXSTING `compiled.py` CODE AT RUNTIME, SO MAKE SURE YOU DON'T HAVE ANY CONFLICTS. 
+The Gyatt interpreter(`gyatt.py`) is written in Python, and therefore, you will need [Python](https://www.python.org/) to run Gyatt. Next, clone this repository. Then, write some gyatt code or use the example `code.gyt` file provided and run `python3 gyatt.py code.gyt`. This will compile the `compiled.py` version of your `.gyt` code, which can be found in your working directory. WARNING: THIS WILL DELETE PRE-EXSTING `compiled.py` CODE AT RUNTIME, SO MAKE SURE YOU DON'T HAVE ANY CONFLICTS. 
 
 More advanced users can also add `gyatt` as an alias for `python3 gyatt.py` in their terminal settings so they can run Gyatt code more easily—`gyatt code.gyt`. 
 
 ## Future changes (not happening)
-1. Add more Gyatt code to replace Python
+1. Add more Gyatt replacements
 2. Automatically add alias
 3. ~~Add tokenization~~
 
