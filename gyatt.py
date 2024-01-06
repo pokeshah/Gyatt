@@ -37,7 +37,7 @@ gyatt_slang = {
     "fanumtax": "raise",
     "yeet": "return",
     "yolo": "try",
-    "yapunitl": "while",
+    "yapuntil": "while",
     "chill": "yield",
     "nerd": "math",
 }
