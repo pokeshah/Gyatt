@@ -107,13 +107,27 @@ nerd — math
 ```
 
 ## OMG!! this looks so exciting! How do I start?
-The Gyatt compiler(`gyatt.py`) is written in Python, and therefore, you will need [Python](https://www.python.org/) to run Gyatt. Next, clone this repository. Then, write some gyatt code or use the example `code.gyt` file provided and run `python3 gyatt.py code.gyt`. This will compile the `compiled.py` version of your `.gyt` code, which can be found in your working directory. WARNING: THIS WILL DELETE PRE-EXSTING `compiled.py` CODE AT RUNTIME, SO MAKE SURE YOU DON'T HAVE ANY CONFLICTS. 
+The Gyatt compiler(`gyatt.py`) is written in Python, and therefore, you will need [Python](https://www.python.org/) to run Gyatt. Next, clone this repository. Then, write some gyatt code or use the example `code.gyt` file provided and run `python3 gyatt.py code.gyt`. This will compile and execute the `.gyt` code.
 
-More advanced users can also add `gyatt` as an alias for `python3 gyatt.py` in their terminal settings so they can run Gyatt code more easily—`gyatt code.gyt`. 
+### <u>Advanced</u> Usage
+```
+usage: gyatt.py [-h] [-o PATH] file
+
+positional arguments:
+  file
+
+options:
+  -h, --help           show this help message and exit
+  -o PATH, --out PATH  Compile and save the code into a Python script at PATH
+```
+
+Even more advanced users can also add `gyatt` as an alias for `python3 gyatt.py` in their terminal settings so they can run Gyatt code more easily—`gyatt code.gyt`.
 
 ## Future changes (not happening)
+
 1. Add more Gyatt replacements
 2. Automatically add alias
 3. ~~Add tokenization~~
+4. Get some help
 
 # Yes, I am okay.
