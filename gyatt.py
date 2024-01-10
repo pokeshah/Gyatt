@@ -60,7 +60,8 @@ if __name__ == "__main__":
     with args.file as gyatt:
         python_code = interpret(gyatt.read())
         if args.out is not None:
-            with open(args.out, "x") as py:
+            with open(args.out, "w") as py:
+                py.truncate(0)
                 py.write(python_code)
         else:
             exec(python_code)
