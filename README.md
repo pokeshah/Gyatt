@@ -72,7 +72,7 @@ yap about one() rn
 
 fanumtax Exception("haha get fanumtaxed!!!")
 ```
-Although this code is easily readable by the majority of the English-speaking world, there may be some cave-dwellers who may fail to understand it. The following is a translation guide for Gyatt.
+Although this code is easily readable by most of the English-speaking world, some cave-dwellers may fail to understand it. The following is a translation guide for Gyatt.
 ```python
 lrizz — False
 norizz — None
@@ -121,7 +121,7 @@ options:
   -o PATH, --out PATH  Compile and save the code into a Python script at PATH
 ```
 
-Even more advanced users can also add `gyatt` as an alias for `python3 gyatt.py` in their terminal settings so they can run Gyatt code more easily—`gyatt code.gyt`.
+Even more advanced users can also add `gyatt` as an alias for `python3 gyatt.py` in their terminal settings to run Gyatt code more easily—`gyatt code.gyt`.
 
 ## Future changes (not happening)
 
