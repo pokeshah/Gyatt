@@ -40,6 +40,11 @@ gyatt_slang = {
     "yapuntil": "while",
     "chill": "yield",
     "nerd": "math",
+    "rando": "random",
+    "numba": "randint",
+    "startyapping": "input",
+    "mid": "min",
+    "peak": "max",
 }
 
 parser = argparse.ArgumentParser()
@@ -60,7 +65,9 @@ def interpret(gyatt_code):
             if token.string == slang:
                 tokens[i] = (token[0], replacement, token[2], token[3], token[4])
     python_code = untokenize.untokenize(tokens)
-    python_code = re.sub(pattern="yap about (.+) rn", repl="print(\\1)", string=python_code)
+    python_code = re.sub(
+        pattern="yap about (.+) rn", repl="print(\\1)", string=python_code
+    )
     return python_code
 
 
