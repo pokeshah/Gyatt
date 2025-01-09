@@ -1,119 +1,117 @@
-# Gyatt
-Gyatt (Gee-yacht) is the Python-based language of the future.
-<br><sub><sup>This is satire; please don't use this, **especially** if you don't know what these terms mean</sup></sub>
+# Gyatt 2
+Gyatt (Gee-yacht) is **the** Python-based programming language of the future.
+<br><sub><sub><sup>Please don't use this, **especially** if you don't know what these terms mean</sup></sub></sub>
 
-## Why?
-Python, a language traditionally thought of as "easy" and "intuitive," uses too many obscure words like `print()` and `math`. I wanted to fix this and keep Python in line with modern conversational English.
+## Erm, what the sigma 🤓?
+Python, traditionally considered "easy" and "intuitive," uses too many archaic words like `print` and `math`. I wanted to fix this and keep Python in line with modern  English.
 
-## What does Gyatt code look like?
 Gyatt is designed with a focus on readability, speed, and function.
-The following is sample code written in Gyatt (comments, although allowed, are generally not needed due to Gyatt's readable nature and are excluded from this example):
+The following is a tiny sample of Gyatt:
+```js
+aldi nerd propertyinegypt pi like pie rn
+waffle about pie rn
 
-```gyatt
-yoinked nerd steal pi masquerade pie
-yap about pie rn
+yapuntil nocap aint be cap tho
+	waffle about "you know whats crazy is that the low taper fade meme is still massive" rn
+	stawp rn
 
-sus 1+2 be 3:
-	yap about "3" rn
-imposter 1+2 be 2 idk 1+2 be 4:
-	yap about "2 idk 4" rn
-crewmate:
-	yap about "error" rn
+skibidi? 1 be 1 rn
 
-yapuntil wrizz:
-	yap about "among us" rn
-	stawp
+x finna mew x tho x sigma 1 rn
+waffle about x(1) rn
 
-yapfor i infam range(10):
-	sus i be 3:
-		next
-	imposter i be 5:
-		stawp
-	crewmate:
-		whatever
-	yap about i rn
-
-gyatt rizzler():
-	yeet "sticking out your gyatt for the rizzler"
-
-yap about rizzler() rn
-
-yolo:
-	yap about 1/0 rn
-oof ZeroDivisionError:
-	yap about "fail" rn
-frfr:
-	yap about 'finally' rn
-
-sus (0/3 be 0) also (0/4 be 0) also aint (1/4 be 0):
-	yap about "success" rn
-
-skibidi 1 be 1
-
-gyatt we():
-	chill "we live"
-	chill "we love"
-	chill "we lie"
-
-yapfor i infam we():
-	yap about i rn
-
-x = anon x: x + 1
-yap about x(1) rn
-
-gyatt one():
-	x = "1"
-	gyatt two():
-		nogatekeep x
-		x = "2"
-	two()
-	yeet x
-yap about one() rn
-
-fanumtax Exception("haha get fanumtaxed!!!")
+choppedchin tho
+	waffle about 1/0 rn
+boom ZeroDivisionError tho
+	waffle about "IVE PLAYED THESE GAMES BEFORE" rn
+frfr tho
+	waffle about 'I SAID IVE PLAYED THESE GAMES BEFORE' rn
 ```
-Although this code is easily readable by most of the English-speaking world, some cave-dwellers may fail to understand it. The following is a translation guide for Gyatt.
+
+Although Gyatt code is easily readable by most people, a tiny minority may fail to understand it. The following is a translation guide for Gyatt:
+
 ```python
-lrizz — False
-norizz — None
-wrizz — True
-also — and
-masquerade — as
-skibidi — assert
-stawp — break
-next — continue
-gyatt — def
-imposter — elif
-crewmate — else
-oof — except
-frfr — finally
-yapfor — for
-yoinked — from
-sus — if
-steal — import
-infam — in
-be — ==
-anon — lambda
-nogatekeep — nonlocal
-aint — not
-idk — or
-whatever — pass
-fanumtax — raise
-yeet — return
-yolo — try
-yapuntil — while
-chill — yield
-nerd — math
+rizz - None
+cap - False
+nocap - True
+btw - and
+like - as
+skibidi - assert
+stawp - break
+period - continue
+gyatt - def
+hawktuah - elif
+tuah - else
+boom - except
+frfr - finally
+iveplayedthesegamesbefore - for
+aldi - from
+hawk - if
+propertyinegypt - import
+be - ==
+huzz - lambda
+nogatekeep - nonlocal
+nogatekeepfrfr - global
+aint - not
+idk - or
+idc - pass
+lowtaperfade - raise
+yeet - return
+choppedchin - try
+yapuntil - while
+chill - yield
+nerd - math
+finna - =
+rn - "" # required, but gets removed in translation
+tho - : # colon in if, while, lambda, etc. statements
+sigma - +
+times - range
 ```
 
-## OMG!! this looks so exciting! How do I start?
-The Gyatt compiler(`gyatt.py`) is written in Python, and therefore, you will need [Python](https://www.python.org/) to run Gyatt. Next, clone this repository. Then, write some gyatt code or use the example `code.gyt` file provided and run `python3 gyatt.py code.gyt`. This will compile the `compiled.py` version of your `.gyt` code, which can be found in your working directory. WARNING: THIS WILL DELETE PRE-EXSTING `compiled.py` CODE AT RUNTIME, SO MAKE SURE YOU DON'T HAVE ANY CONFLICTS. 
+## my cutie pattotie, how do I start 🫶?
 
-More advanced users can also add `gyatt` as an alias for `python3 gyatt.py` in their terminal settings to run Gyatt code more easily—`gyatt code.gyt`. 
+The Gyatt Compiler(`gyatt.py`) is written in Python, and therefore, you will need [Python](https://www.python.org/) to run Gyatt. Next, clone this repository. Then, write some Gyatt code or use the example `code.gyt` file provided and run `python3 gyatt.py code.gyt`.
+
+More advanced users can also add `gyatt` as an alias for `python3 gyatt.py` in their terminal profile to run Gyatt code more easily—`gyatt code.gyt`. 
+
+## uwu 😊
+
+Q: Erm 🤓, wtf is going on with my strings?
+<br>A: In Gyatt 2, a change was made to uwu-ify all strings by default. Ex (`how are you?` -> `h-how awe yoyu?`). Although highly recommended, this feature can be turned off with the `--nouwu` or `-n` command-line arguments.
+
+## yo tengo une erreur de compiler 😡🤬😠!!!
+
+In Gyatt 2, you can specify a file to which python code will compile to by using a positional argument like `gyatt code.gyt argh` (compiled code will be saved in `argh.py`)
+
+## top dos scariest hoompscahres 😱
+The Gyatt Compiler requires you to end every line with either `tho` or `rn` for readability. However, be careful, as these are not interchangeable!! 
+- `tho` is used as the colon(`:`) in Python (if, while, for, lambda, etc.)
+- `rn` is used to signify the end of the line
+
+## segfault 😭
+gyatt2 has a russian roullete system where it has a 1/6 chance of segfaulting
+
+## Compatability
+### pookie bear 🥰, will my Gyatt 1 code work in Gyatt 2?
+no
+
+### will there be backwards compatability in the future
+no
+
+### will there be documentation on what changed
+no
 
 ## Future changes (not happening)
-1. Add more Gyatt replacements
-2. Automatically add alias
-3. ~~Add tokenization~~
 
-# Yes, I am okay.
+1. Automatically add alias
+2. ~~Add tokenization~~
+3. ~~Custom Output~~
+4. ~~UwUfication~~
+5. Python to Gyatt
+6. Multi-Word Tokenization
+7. Emojification
+8. completely ban comments (currently only heavily discouraged)
+9. **randomly swap all variables in memory (in testing)**
+
+# xoxo,
+pokeshah ❤️
