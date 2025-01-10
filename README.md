@@ -91,14 +91,15 @@ The Gyatt Compiler requires you to end every line with either `tho` or `rn` for 
 ## segfault 😭
 gyatt2 has a russian roullete system where it has a 1/6 chance of segfaulting
 
+## memory usage 😡 💢 💢 
+gyatt2 initializes 16gb worth of data into memory for no reason 
+
+
 ## Compatability
 ### pookie bear 🥰, will my Gyatt 1 code work in Gyatt 2?
 no
 
-### will there be backwards compatability in the future
-no
-
-### will there be documentation on what changed
+### is there documentation on what changed
 no
 
 ## Future changes (not happening)
