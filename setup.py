@@ -17,12 +17,22 @@ def add_alias():
         print(f"Unsupported shell: {shell}")
         return
     
-    alias = "alias gyatt='python3 gyatt.py'\n"
+    gyatt_alias = "alias gyatt='python3 gyatt.py'\n"
+    convert_alias = "alias gyattconvert='python3 gyattconverter.py'\n"
     
     try:
+        with open(config_file, 'r') as file:
+            config_contents = file.read()
+
+        if gyatt_alias in config_contents and convert_alias in config_contents:
+            print(f"Aliases 'gyatt' and 'gyattconvert' already added to {config_file}.")
+            return
+        
         with open(config_file, 'a') as file:
-            file.write(alias)
-        print(f"Alias 'gyatt' added successfully to {config_file}.")
+            file.write(gyatt_alias)
+            file.write(convert_alias)
+        
+        print(f"Alias 'gyatt' and 'gyattconvert' added to {config_file}.")
         print(f"Please run the following command to reload your shell config:\n{reload_command}")
         
     except Exception as e:
