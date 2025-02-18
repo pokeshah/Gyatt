@@ -6,6 +6,7 @@ from io import StringIO
 import untokenize  # use untokenize module because it gives normal output unlike tokenize module
 import uwuify
 import ast
+import sys
 
 
 gyatt_slang = {
@@ -103,12 +104,21 @@ def interpret(gyatt_code):
     python_code = python_code.replace(" \abcdefgh:", ":")  # avoid hitting non-code
     return "import ctypes, random; ctypes.string_at(0) if random.randint(1, 6) == 1 else None\n" + "x = bytearray(1024*1024*1000*16)\n" + python_code
 
+def check_for_comments(file_path):
+    """Checks for single-line and multi-line comments in the code."""
+    with open(file_path, 'r') as file:
+        code = file.read()
+
+    single_line_comment = r'#.*'
+    multi_line_comment = r'"""(.*?)"""|\'\'\'(.*?)\'\'\''
+
+    if re.search(single_line_comment, code) or re.search(multi_line_comment, code, re.DOTALL):
+        raise ValueError("Someones being naughty and trying to use comments.")
 
 gyatt = args.file
 nouwu = args.nouwu
+check_for_comments(gyatt.name)
 python_code = interpret(rncheck(gyatt.read()))
-
-
 
 if args.out:
     output = f"{str(args.out)}.py"
