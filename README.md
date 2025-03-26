@@ -1,4 +1,5 @@
 # Gyatt 2
+![A Logo of Gyatt in the style of Python](logo.png "A Logo of Gyatt in the style of Python")
 Gyatt (Gee-yacht) is **the** Python-based programming language of the future.
 <br><sub><sub><sup>Please don't use this, **especially** if you don't know what these terms mean</sup></sub></sub>
 
