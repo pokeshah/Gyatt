@@ -115,11 +115,10 @@ def check_for_comments(file_path):
     if re.search(single_line_comment, code) or re.search(multi_line_comment, code, re.DOTALL):
         raise ValueError("Someones being naughty and trying to use comments.")
 
-gyatt = args.file
 nouwu = args.nouwu
-check_for_comments(gyatt.name)
-python_code = interpret(rncheck(gyatt.read()))
-
+with args.file as gyatt:
+    check_for_comments(gyatt.name)
+    python_code = interpret(rncheck(gyatt.read()))
 if args.out:
     output = f"{str(args.out)}.py"
     with open(output, "w") as py:
