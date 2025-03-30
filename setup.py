@@ -1,9 +1,8 @@
 import os
-import sys
 
 def add_alias():
     shell = os.environ.get('SHELL', '').lower()
-    
+
     if 'bash' in shell:
         config_file = os.path.expanduser('~/.bashrc')
         reload_command = 'source ~/.bashrc'
@@ -16,10 +15,11 @@ def add_alias():
     else:
         print(f"Unsupported shell: {shell}")
         return
-    
-    gyatt_alias = "alias gyatt='python3 gyatt.py'\n"
-    convert_alias = "alias gyattconvert='python3 gyattconverter.py'\n"
-    
+
+
+    gyatt_alias = f"alias gyatt='python3 {os.path.join(os.path.dirname(os.path.realpath(__file__)), "gyatt.py")}'\n"
+    convert_alias = f"alias gyattconvert='python3 {os.path.join(os.path.dirname(os.path.realpath(__file__)), "gyattconvert.py")}'\n"
+
     try:
         with open(config_file, 'r') as file:
             config_contents = file.read()
@@ -27,14 +27,14 @@ def add_alias():
         if gyatt_alias in config_contents and convert_alias in config_contents:
             print(f"Aliases 'gyatt' and 'gyattconvert' already added to {config_file}.")
             return
-        
+
         with open(config_file, 'a') as file:
             file.write(gyatt_alias)
             file.write(convert_alias)
-        
+
         print(f"Alias 'gyatt' and 'gyattconvert' added to {config_file}.")
-        print(f"Please run the following command to reload your shell config:\n{reload_command}")
-        
+        print(f"Please close this terminal window and open a new one or run {reload_command} to apply the changes.")
+
     except Exception as e:
         print(f"Error adding alias: {e}")
 
