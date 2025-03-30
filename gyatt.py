@@ -1,17 +1,15 @@
 import re
 import argparse
-import os
 import tokenize
 from io import StringIO
-import untokenize  # use untokenize module because it gives normal output unlike tokenize module
+import untokenize
 import uwuify
-import ast
 
 
 gyatt_slang = {
     "rizz": "None",
-    "cap": "False",  # cap synonymous to lrizz
-    "nocap": "True",  # nocap synonymous to wrizz
+    "cap": "False",
+    "nocap": "True",
     "btw": "and",
     "like": "as",
     "skibidi": "assert",
@@ -41,7 +39,7 @@ gyatt_slang = {
     "nerd": "math",
     "finna": "=",
     "rn": "",
-    "tho": "\abcdefgh:",  # avoid hitting non-code
+    "tho": ":",
     "sigma": "+",
     "times": "range",
 }
@@ -58,37 +56,39 @@ args = parser.parse_args()
 
 
 def run(runfile):
-    """Runs the compiled Python code"""
     with open(runfile, "r") as rnf:
         exec(rnf.read())
 
 
 def rncheck(code):
-    """Checks if each line ends with 'tho' or 'rn'"""
     lines = code.split("\n")
     for i, line in enumerate(lines, start=1):
         if (
-            line
-            and not line.strip().endswith("tho")
-            and not line.strip().endswith("rn")
+                line
+                and "\u0023" in line
+        ):
+            raise SyntaxError(f"Line {i}: No comments in your code")
+        if (
+                line
+                and not line.strip().endswith("tho")
+                and not line.strip().endswith("rn")
         ):
             raise SyntaxError(f"Line {i}: Each line must end with 'tho' or 'rn'")
     return code
 
 
 def interpret(gyatt_code):
-    """Interprets the Gyatt code and converts it to Python code."""
     gyatt_code = gyatt_code.replace(
         "aint be", "!="
-    )  # TODO: fix these two replaces to use tokenization
+    )
     gyatt_code = gyatt_code.replace("skibidi?", "skibidi")
     tokens = list(tokenize.generate_tokens(StringIO(gyatt_code).readline))
     python_code = ""
     for i, token in enumerate(tokens):
         for slang, replacement in gyatt_slang.items():
-            if token.string == slang:  # replacement
+            if token.string == slang:
                 tokens[i] = (token[0], replacement, token[2], token[3], token[4])
-            if token.type == tokenize.STRING and not nouwu:  # uwufication
+            if token.type == tokenize.STRING and not nouwu:
                 tokens[i] = (
                     token[0],
                     uwuify.uwu(uwuify.uwu(token.string, flags=(uwuify.YU | uwuify.STUTTER))[2:], flags=(uwuify.YU | uwuify.STUTTER))[2:],
@@ -99,16 +99,19 @@ def interpret(gyatt_code):
     python_code = untokenize.untokenize(tokens)
     python_code = re.sub(
         pattern="waffle about (.+) ", repl="print(\\1)", string=python_code
-    )  # TODO: replace this with tokenization
-    python_code = python_code.replace(" \abcdefgh:", ":")  # avoid hitting non-code
+    )
     return "import ctypes, random; ctypes.string_at(0) if random.randint(1, 6) == 1 else None\n" + "x = bytearray(1024*1024*1000*16)\n" + python_code
 
+def check_for_comments(code):
+    multi_line_comment = r'"""(.*?)"""|\'\'\'(.*?)\'\'\''
 
-gyatt = args.file
+    if re.search(multi_line_comment, code, re.DOTALL):
+        raise ValueError("Comments are prohibited in the code.")
+    return code
+
 nouwu = args.nouwu
-python_code = interpret(rncheck(gyatt.read()))
-
-
+with args.file as gyatt:
+    python_code = interpret(rncheck(check_for_comments(gyatt.read())))
 
 if args.out:
     output = f"{str(args.out)}.py"
