@@ -107,9 +107,6 @@ no
 ### is there documentation on what changed
 no
 
-## i am a vc; does your product have AI?
-
-
 ## Future changes (not happening)
 
 1. ~~Automatically add alias~~
