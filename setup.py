@@ -17,8 +17,8 @@ def add_alias():
         return
 
 
-    gyatt_alias = f"alias gyatt='python3 {os.path.join(os.path.dirname(os.path.realpath(__file__)), 'gyatt.py')}'\n"
-    convert_alias = f"alias gyattconvert='python3 {os.path.join(os.path.dirname(os.path.realpath(__file__)), 'gyattconvert.py')}'\n"
+    gyatt_alias = f"alias gyatt='python3 {os.path.join(os.path.dirname(os.path.realpath(__file__)), 'src/gyatt.py')}'\n"
+    convert_alias = f"alias gyattconvert='python3 {os.path.join(os.path.dirname(os.path.realpath(__file__)), 'src/gyattconvert.py')}'\n"
     try:
         with open(config_file, 'r') as file:
             config_contents = file.read()
