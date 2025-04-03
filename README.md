@@ -123,6 +123,7 @@ i can put ai in the title for 10m at 100m valuation
 9. randomly swap all variables in memory (in testing)
 10. ~~mappings in json format~~
 11. vibe coding only (1b parameter model)
+12. tokenization for py->gyt
 
 # xoxo,
 pokeshah ❤️
