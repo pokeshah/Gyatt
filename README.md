@@ -108,7 +108,7 @@ no
 no
 
 ## i am a vc; does your product have AI?
-i can put ai in the title for 10m at 100m valuation
+
 
 ## Future changes (not happening)
 
