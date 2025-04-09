@@ -7,7 +7,7 @@ Python, traditionally considered "easy" and "intuitive," uses too many archaic w
 
 Gyatt is designed with a focus on readability, speed, and function.
 The following is a tiny sample of Gyatt:
-```js
+```applescript
 aldi eightfreepizzas ashtonhall pi like pie rn
 yap about pie rn
 
